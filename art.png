@@ -1,0 +1,21 @@
+#SPOTIFY CREDENTIALS 
+client_id='c55c391176f34444a815f0f1549eb1b5'
+client_secret='6875c9559bbb4eafb41102767be5b901'
+
+#GOOGLE CREDENTIALS
+youtube_KEY = "AIzaSyDrCAFmsiMsWxjKxplvmnBx0O2Gu1KLuRU"
+
+#MY PLAYLIST URL
+playlist_url = "https://open.spotify.com/user/22ql3mdjbu7eovdrj5ctdv66a/playlist/2hcPm88zj3Ayi3AgmkXr08?si=H2sZw4HBTqKxzFnaQRHxgA"
+
+
+
+# PUT YOUR SPOTIFY CREDENTIALS HERE
+client_id='0000000000000000000000000000000000000'
+client_secret='0000000000000000000000000000000000'
+
+#PUT YOUR GOOGLE CREDENTIALS HERE
+youtube_KEY = "000000000000000000000000000000000000000"
+
+#PUT YOUR PLAYLIST URL HERE
+playlist_url = "https://open.spotify.com/user/22ql3mdjbu7eovdrj5ctdv66a/playlist/2hcPm88zj3Ayi3AgmkXr08?si=H2sZw4HBTqKxzFnaQRHxgA"
