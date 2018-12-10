@@ -46,11 +46,11 @@ def SearchAndSaveMusic(url,directory_album,data,idx):
                     song.tag.images.set(3,imagedata,"image/jpeg",u"{}".format(data["name"]+" "+data["album_name"]))
                 song.tag.save()
     except:
-        with open("./files/erros.json","w") as final:
+        with open("./files/error.json","w") as final:
             print("erro2 ao baixa: {}".format(idx))
-            jsonFile = open("./files/erros.json", "r")
+            jsonFile = open("./files/error.json", "r")
             datae = json.load(jsonFile)
             jsonFile.close()
             datae.append({'music_id':idx})
-            with open("./files/erros.json", "w") as jsonFile:
+            with open("./files/error.json", "w") as jsonFile:
                 json.dump(datae, jsonFile)

@@ -6331,7 +6331,7 @@
                 "name": "Trivium"
             }
         ],
-        "name": "Master Of Puppets"
+        "name": "Master of Puppets"
     },
     {
         "album_date": "2005-03-07",
@@ -6342,7 +6342,7 @@
                 "name": "Trivium"
             }
         ],
-        "name": "Dying In Your Arms"
+        "name": "Dying in Your Arms"
     },
     {
         "album_date": "2017-09-15",
@@ -7608,5 +7608,38 @@
             }
         ],
         "name": "MAKING LOVE"
+    },
+    {
+        "album_date": "2010-04-06",
+        "album_img": "https://i.scdn.co/image/6a6d6572ddab31bf06933629ea9024dee30e1f72",
+        "album_name": "Slash",
+        "artist": [
+            {
+                "name": "Slash"
+            }
+        ],
+        "name": "Gotten"
+    },
+    {
+        "album_date": "2010-04-06",
+        "album_img": "https://i.scdn.co/image/6a6d6572ddab31bf06933629ea9024dee30e1f72",
+        "album_name": "Slash",
+        "artist": [
+            {
+                "name": "Slash"
+            }
+        ],
+        "name": "Beautiful Dangerous"
+    },
+    {
+        "album_date": "2010-04-06",
+        "album_img": "https://i.scdn.co/image/6a6d6572ddab31bf06933629ea9024dee30e1f72",
+        "album_name": "Slash",
+        "artist": [
+            {
+                "name": "Slash"
+            }
+        ],
+        "name": "Back From Cali"
     }
 ]

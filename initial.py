@@ -16,14 +16,14 @@ directory = "music"
 #shutil.rmtree(directory)
 #os.mkdir(directory)
 
-# PUT YOUR SPOTIFY CREDENTIALS HERE
-client_id='0000000000000000000000000000000000000'
-client_secret='0000000000000000000000000000000000'
+#SPOTIFY CREDENTIALS 
+client_id='c55c391176f34444a815f0f1549eb1b5'
+client_secret='6875c9559bbb4eafb41102767be5b901'
 
-#PUT YOUR GOOGLE CREDENTIALS HERE
-youtube_KEY = "000000000000000000000000000000000000000"
+#GOOGLE CREDENTIALS
+youtube_KEY = "AIzaSyDrCAFmsiMsWxjKxplvmnBx0O2Gu1KLuRU"
 
-#PUT YOUR PLAYLIST URL HERE
+#MY PLAYLIST URL
 playlist_url = "https://open.spotify.com/user/22ql3mdjbu7eovdrj5ctdv66a/playlist/2hcPm88zj3Ayi3AgmkXr08?si=H2sZw4HBTqKxzFnaQRHxgA"
 
 auth = str(base64.b64encode((client_id+":"+client_secret).encode()))[2:-1]
@@ -80,25 +80,25 @@ for line in data:
                 print("{}/{}".format(total,max_total))
             else:
                 print("err1")
-                jsonFile = open("./files/erros.json", "r")
+                jsonFile = open("./files/error.json", "r")
                 datae = json.load(jsonFile)
                 jsonFile.close()
                 datae.append({'music_id': data.index(line)})
-                with open("./files/erros.json", "w") as jsonFile:
+                with open("./files/error.json", "w") as jsonFile:
                     json.dump(datae, jsonFile)
 
                 
         except:
             print("erro3 ao baixa: {}".format( data.index(line)))
-            jsonFile = open("./files/erros.json", "r")
+            jsonFile = open("./files/error.json", "r")
             datae = json.load(jsonFile)
-            jsonFile.close()
             datae.append({'music_id': data.index(line)})
-            with open("./files/erros.json", "w") as jsonFile:
+            with open("./files/error.json", "w") as jsonFile:
                 json.dump(datae, jsonFile)
+            jsonFile.close()
 
 print("\n...CORRGINDO ERROS ...\n")
-jsonFile = open("./files/erros.json", "r")
+jsonFile = open("./files/error.json", "r")
 erros = json.load(jsonFile)
 Nmax_total = len(erros)
 if Nmax_total > 0:
@@ -129,28 +129,28 @@ if Nmax_total > 0:
                     print("{}/{}".format(total,max_total))
                 else:
                     print("err1")
-                    jsonFile = open("./files/erros.json", "r")
+                    jsonFile = open("./files/error.json", "r")
                     datae = json.load(jsonFile)
                     jsonFile.close()
                     datae.append({'music_id': data.index(line)})
-                    with open("./files/erros.json", "w") as jsonFile:
+                    with open("./files/error.json", "w") as jsonFile:
                         json.dump(datae, jsonFile)
 
                     
             except:
                 print("erro3 ao baixa: {}".format( data.index(line)))
-                jsonFile = open("./files/erros.json", "r")
+                jsonFile = open("./files/error.json", "r")
                 datae = json.load(jsonFile)
                 jsonFile.close()
                 datae.append({'music_id': data.index(line)})
-                with open("./files/erros.json", "w") as jsonFile:
+                with open("./files/error.json", "w") as jsonFile:
                     json.dump(datae, jsonFile)
         
-        jsonFile = open("./files/erros.json", "r")
+        jsonFile = open("./files/error.json", "r")
         datae = json.load(jsonFile)
         jsonFile.close()
         del(datae[datae.index(er)])
-        with open("./files/erros.json", "w") as jsonFile:
+        with open("./files/error.json", "w") as jsonFile:
             json.dump(datae, jsonFile)
         
 
